@@ -10,13 +10,21 @@ int main ()
     cout.tie(NULL);
     test
     {
-        string s;
-		cin >> s;
-		string s1 = s;
-		reverse(s1.begin() , s1.end());
-		if ( s1 == s ) cout << "YES";
-		else cout << "NO";
+        int n;
+		cin >> n;
+		int m = sqrt(n);
+		for ( int i = 2 ; i <= m ; i++ )
+		{
+			int d = 0;
+			while (n % i == 0)
+			{
+				d++;
+				n /= i;
+			}
+			if (d) cout << i << " " << d << " ";
+		}
+		if ( n > 1 ) cout << n << " " << 1;
         cout << '\n';
     }
     return 0;
-}
+}   

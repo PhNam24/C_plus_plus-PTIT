@@ -9,12 +9,11 @@ int main ()
     cin.tie(NULL); 
     cout.tie(NULL);
     test
-	{
-		string s;
-		cin >> s;
-		int x = s.find("084");
-		s.erase(x, 3);
-		cout << s << '\n';
-	}
+    {
+        int a , b;
+		cin >> a >> b;
+		cout << (long long) a * b / __gcd(a , b) << " " << __gcd(a , b);
+        cout << '\n';
+    }
     return 0;
 }
