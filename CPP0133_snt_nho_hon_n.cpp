@@ -16,7 +16,7 @@ int main ()
     {
         if ( !isPrime[i] )
         {
-            for ( int j = i * i; j <= 10005; j += i )
+            for ( int j = i * i; j <= 10005; j += i )   
             {
                 isPrime[j] = 1;
             }

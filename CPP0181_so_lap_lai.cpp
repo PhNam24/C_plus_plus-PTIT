@@ -10,14 +10,14 @@ int main ()
     cout.tie(NULL);
     test
     {
-        int n;
-		cin >> n;
-		long long ans = 1;
-		for ( long long i = 2 ; i <= n; i++ )
-		{
-			ans *= i / __gcd(ans , i);
-		}
-		cout << ans;
+        string s;
+        long long a , b;
+        cin >> s >> a >> b;
+        long long tmp = __gcd(a , b);
+        for ( int i = 0 ; i < tmp ; i++ )
+        {
+            cout << s;
+        }
         cout << '\n';
     }
     return 0;

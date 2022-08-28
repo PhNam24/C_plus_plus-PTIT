@@ -35,7 +35,11 @@ int main ()
                 int j = sqrt(i);
                 for ( int k = 3; k <= j; k++ )
                 {
-                    if ( i % k == 0 ) cout << k;    
+                    if ( i % k == 0 )   
+                    {
+                        cout << k;
+                        break;
+                    }  
                 }
             }
             cout << " ";
