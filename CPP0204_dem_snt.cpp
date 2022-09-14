@@ -29,7 +29,7 @@ int main ()
         {
             if ( snt(i) ) cnt++;
         }
-        cout << cnt;
+        cout << cnt;    
         cout << endl;
     }
     return 0;
